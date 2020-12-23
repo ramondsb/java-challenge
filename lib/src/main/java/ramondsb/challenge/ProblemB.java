@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ProblemB {
-    // Approach 1:
     // Generate all pairs and filter out sums that don't fit
     // TODO: Convert to int[][]
     public List<int[]> solution1(int[] arr, int target) {
@@ -24,7 +23,6 @@ public class ProblemB {
                     pairs.add(currentPair);
                 }
 
-                // Update pair
                 previousPair = currentPair;
             }
         }
