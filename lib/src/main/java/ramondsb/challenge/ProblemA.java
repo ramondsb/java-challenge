@@ -5,8 +5,14 @@ import java.util.Arrays;
 public class ProblemA {
 
     public int solution1(int[] arr) {
+        if (arr.length < 1) return 1;
+
         Arrays.sort(arr);
+
         int last = arr[0];
+
+        if (arr[0] != 1) return 1;
+
         for (int i = 0; i < arr.length - 1; i++) {
             int diff = Math.abs(arr[i + 1] - arr[i]);
 
