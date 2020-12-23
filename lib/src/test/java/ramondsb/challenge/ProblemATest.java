@@ -39,4 +39,11 @@ public class ProblemATest {
         int expectedOutput = 1;
         assertEquals(expectedOutput, classUnderTest.solution1(input));
     }
+
+    @Test public void testSolution1Random() {
+        ProblemA classUnderTest = new ProblemA();
+        int[] input = {-1, -2, 1, 2, 3};
+        int expectedOutput = 4;
+        assertEquals(expectedOutput, classUnderTest.solution1(input));
+    }
 }
