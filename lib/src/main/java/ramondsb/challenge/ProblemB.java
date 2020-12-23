@@ -9,7 +9,8 @@ public class ProblemB {
     public List<int[]> solution1(int[] arr, int target) {
         List<int[]> pairs = new ArrayList();
 
-        // TODO: Check array size
+        if (arr.length == 0) return pairs;
+
         int[] previousPair = new int[] { arr[0], arr[0] };
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {

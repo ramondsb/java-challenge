@@ -16,4 +16,13 @@ public class ProblemBTest {
         List<int[]> actualOutput = classUnderTest.solution1(input, target);
         assertArrayEquals(expectedOutput.toArray(), actualOutput.toArray());
     }
+
+    @Test public void testSolution1Empty() {
+        ProblemB classUnderTest = new ProblemB();
+        int target = 8;
+        int[] input = {};
+        List<int[]> expectedOutput =  new ArrayList();
+        List<int[]> actualOutput = classUnderTest.solution1(input, target);
+        assertArrayEquals(expectedOutput.toArray(), actualOutput.toArray());
+    }
 }
