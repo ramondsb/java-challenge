@@ -12,17 +12,17 @@ public class ProblemBTest {
         ProblemB classUnderTest = new ProblemB();
         int target = 8;
         int[] input = {-2, -1, 0, 2, 4, 7, 8, 9, 9};
-        List<int[]> expectedOutput =  new ArrayList(List.of(new int[]{-1, 9}, new int[]{0, 8}, new int[]{4, 4}));
+        int[][] expectedOutput =  {{-1, 9}, {0, 8}, {4, 4}};
         List<int[]> actualOutput = classUnderTest.solution1(input, target);
-        assertArrayEquals(expectedOutput.toArray(), actualOutput.toArray());
+        assertArrayEquals(expectedOutput, actualOutput.toArray());
     }
 
     @Test public void testSolution1Empty() {
         ProblemB classUnderTest = new ProblemB();
         int target = 8;
         int[] input = {};
-        List<int[]> expectedOutput =  new ArrayList();
+        int[][] expectedOutput =  {};
         List<int[]> actualOutput = classUnderTest.solution1(input, target);
-        assertArrayEquals(expectedOutput.toArray(), actualOutput.toArray());
+        assertArrayEquals(expectedOutput, actualOutput.toArray());
     }
 }
