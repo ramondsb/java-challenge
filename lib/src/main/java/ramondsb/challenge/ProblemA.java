@@ -3,7 +3,18 @@ package ramondsb.challenge;
 import java.util.Arrays;
 
 public class ProblemA {
-
+    /**
+     * Description:
+     * Receive an array A of N integer and return the smallest positive integer (bigger than 0)
+     * that isn't present in A.
+     *
+     * Approach:
+     * Sort array in ascending order.
+     * Walk through elements from left to right checking if the succeeding element is present.
+     * Check out base and boundary cases and special cases:
+     *   - Missing 1 at beginning, complete array, repetitive and etc.
+     * Time complexity is O(n)
+     */
     public int solution1(int[] arr) {
         if (arr.length < 1) return 1;
 

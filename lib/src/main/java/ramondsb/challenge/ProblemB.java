@@ -4,8 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ProblemB {
-    // Generate all pairs and filter out sums that don't fit
-    // TODO: Convert to int[][]
+    /**
+     * Description:
+     * Receive an ordered array of numbers and a number X. Return all
+     * pair combinations that sums up to X.
+     *
+     * Approach:
+     * The approach to solution1 basically generate all pairs
+     * and filter out sums that don't fit. This has a time complexity of O(n^2).
+     */
     public List<int[]> solution1(int[] arr, int target) {
         List<int[]> pairs = new ArrayList();
 
