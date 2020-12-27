@@ -13,7 +13,7 @@ public class ProblemA {
      * Walk through elements from left to right checking if the succeeding element is present.
      * Check out base and boundary cases and special cases:
      *   - Missing 1 at beginning, complete array, repetitive and etc.
-     * Time complexity is O(n)
+     * Time complexity is O(n log(n)).
      */
     public int solution1(int[] arr) {
         if (arr.length < 1) return 1;
