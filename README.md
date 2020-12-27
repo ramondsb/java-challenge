@@ -1,2 +1,6 @@
-# java-challenge
-Java coding challenge
+# Java Code Challenge
+
+## Testing solutions
+```bash
+./gradlew test
+```
